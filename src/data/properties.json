@@ -1,0 +1,169 @@
+[
+  {
+    "id": 1,
+    "image": [
+      "/houses/house 1.jpg",
+      "/houses/house 1.1.jpg",
+      "/houses/house 1.2.jpg"
+    ],
+    "title": "Cozy Cottage",
+    "description": [
+      "A charming cottage in the countryside.",
+      "Nestled in the heart of the countryside, this charming cottage offers the perfect escape from the hustle and bustle of city life. The Cozy Cottage boasts a warm and inviting atmosphere, with a rustic design that highlights the natural beauty of its surroundings. The interior features two spacious bedrooms, each thoughtfully decorated to create a peaceful retreat. The living area is complemented by a cozy fireplace, ideal for curling up with a good book on a chilly evening. Step outside, and you'll find a private pool, perfect for a refreshing dip in the summer. The surrounding landscape offers stunning views of rolling hills and meadows, making it the ideal spot for nature lovers. Whether you're enjoying a morning coffee on the porch or exploring the nearby hiking trails, the Cozy Cottage promises a tranquil and rejuvenating getaway. With modern amenities like high-speed Wi-Fi and a fully equipped kitchen, you'll have everything you need for a comfortable stay."
+    ],
+    "price": 120,
+    "location": "Countryside",
+    "bedrooms": 2,
+    "amenities": ["pool"]
+  },
+  {
+    "id": 2,
+    "image": [
+      "/houses/house 2.jpg",
+      "/houses/house 2.1.jpg",
+      "/houses/house 2.2.jpg"
+    ],
+    "title": "Modern Apartment",
+    "description": [
+      "A stylish apartment in the city center.",
+      "Experience the vibrant energy of city life from the comfort of this stylish Modern Apartment. Located in the heart of the city center, this one-bedroom apartment offers a sleek and contemporary design, perfect for the modern traveler. The open-plan living area features floor-to-ceiling windows, allowing natural light to flood the space and providing breathtaking views of the bustling cityscape. The kitchen is equipped with state-of-the-art appliances, making it easy to prepare gourmet meals at home. The bedroom is a serene haven, with plush bedding and minimalist decor that promotes relaxation. High-speed Wi-Fi ensures you can stay connected, whether you're working remotely or streaming your favorite shows. The building offers additional amenities, including a rooftop terrace where you can unwind and enjoy panoramic city views. With its prime location, you'll have easy access to the city's top attractions, restaurants, and shopping districts. Whether you're visiting for business or pleasure, the Modern Apartment is the perfect base for your urban adventure."
+    ],
+    "price": 200,
+    "location": "City Center",
+    "bedrooms": 1,
+    "amenities": ["wifi"]
+  },
+  {
+    "id": 3,
+    "image": [
+      "/houses/house 3.jpg",
+      "/houses/house 3.1.jpg",
+      "/houses/house 3.2.jpg"
+    ],
+    "title": "Luxury Villa",
+    "description": [
+      "A luxurious villa with stunning ocean views.",
+      "Indulge in the ultimate beachfront experience with this stunning Luxury Villa. Situated on the edge of the ocean, this villa offers breathtaking views of the sea from every room. The expansive property features four spacious bedrooms, each with its own en-suite bathroom and private balcony. The living area is designed with elegance and comfort in mind, boasting high ceilings, designer furnishings, and floor-to-ceiling windows that open up to the outdoor terrace. The gourmet kitchen is fully equipped with top-of-the-line appliances, perfect for preparing meals to enjoy in the formal dining room or al fresco by the pool. The outdoor space is a private oasis, with a large infinity pool, sun loungers, and direct access to a pristine beach. Additional amenities include a fully equipped gym, high-speed Wi-Fi, and a home theater. Whether you're lounging by the pool, enjoying a workout, or watching the sunset over the ocean, the Luxury Villa offers a serene and luxurious retreat for those seeking the finer things in life."
+    ],
+    "price": 450,
+    "location": "Beachfront",
+    "bedrooms": 4,
+    "amenities": ["pool", "gym", "wifi"]
+  },
+  {
+    "id": 4,
+    "image": [
+      "/houses/house 4.jpg",
+      "/houses/house 4.1.jpg",
+      "/houses/house 4.2.jpg"
+    ],
+    "title": "Rustic Cabin",
+    "description": [
+      "A cozy cabin nestled in the woods.",
+      "Escape to the tranquility of the woods with this charming Rustic Cabin. Tucked away in a secluded forest, this one-bedroom cabin offers a peaceful retreat from the stresses of everyday life. The interior is warm and inviting, with wooden beams, a stone fireplace, and cozy furnishings that create a sense of comfort and relaxation. The bedroom is a cozy haven, perfect for a restful night's sleep, while the living area offers plenty of space to unwind. The fully equipped kitchen makes it easy to prepare home-cooked meals, which can be enjoyed at the dining table or on the outdoor deck. The cabin's outdoor space is perfect for nature lovers, with a private fire pit for evening gatherings and a BBQ grill for outdoor cooking. Whether you're exploring the surrounding hiking trails, stargazing from the porch, or simply enjoying the peace and quiet of the forest, the Rustic Cabin offers a serene escape that will leave you feeling refreshed and rejuvenated."
+    ],
+    "price": 100,
+    "location": "Forest",
+    "bedrooms": 1,
+    "amenities": ["fireplace", "bbq"]
+  },
+  {
+    "id": 5,
+    "image": [
+      "/houses/house 5.jpg",
+      "/houses/house 5.1.jpg",
+      "/houses/house 5.2.jpg"
+    ],
+    "title": "Penthouse Suite",
+    "description": [
+      "A top-floor penthouse with panoramic city views.",
+      "Elevate your stay with this luxurious Penthouse Suite, located on the top floor of a high-rise building in the heart of downtown. This spacious three-bedroom suite offers unparalleled views of the city skyline, with floor-to-ceiling windows that flood the space with natural light. The interior is elegantly designed, with modern furnishings, high-end finishes, and a sophisticated color palette that creates a chic and comfortable atmosphere. The master bedroom features a king-sized bed, a walk-in closet, and an en-suite bathroom with a soaking tub and rain shower. The open-plan living area is perfect for entertaining, with a fully equipped kitchen, a dining area, and a spacious lounge that opens onto a private balcony. The suite also includes access to a rooftop pool, a state-of-the-art gym, and a private parking space. Whether you're sipping a glass of wine on the balcony, enjoying a workout in the gym, or taking a dip in the pool, the Penthouse Suite offers a luxurious and unforgettable experience in the heart of the city."
+    ],
+    "price": 500,
+    "location": "Downtown",
+    "bedrooms": 3,
+    "amenities": ["pool", "gym", "wifi", "balcony"]
+  },
+  {
+    "id": 6,
+    "image": [
+      "/houses/house 6.jpg",
+      "/houses/house 6.1.jpg",
+      "/houses/house 6.2.jpg"
+    ],
+    "title": "Suburban Family Home",
+    "description": [
+      "A spacious home perfect for a family in the suburbs.",
+      "This spacious Suburban Family Home offers the perfect blend of comfort and convenience for families looking for a peaceful retreat in the suburbs. Located in a quiet residential area, this three-bedroom home is designed with family living in mind. The open-plan living area is bright and airy, with plenty of space for the whole family to relax and unwind. The modern kitchen is fully equipped with everything you need to prepare family meals, and the adjacent dining area is perfect for gathering around the table. The bedrooms are generously sized, with comfortable beds and plenty of storage space. The master bedroom includes an en-suite bathroom, while the other bedrooms share a well-appointed family bathroom. The home also features a private garden, ideal for outdoor play, and a garage for secure parking. High-speed Wi-Fi ensures everyone can stay connected, and the home's location provides easy access to local schools, parks, and shopping centers. Whether you're enjoying a barbecue in the garden or a movie night in the living room, this Suburban Family Home offers a welcoming and comfortable space for families to create lasting memories."
+    ],
+    "price": 250,
+    "location": "Suburbs",
+    "bedrooms": 3,
+    "amenities": ["garden", "garage", "wifi"]
+  },
+  {
+    "id": 7,
+    "image": [
+      "/houses/house 7.jpg",
+      "/houses/house 7.1.jpg",
+      "/houses/house 7.2.jpg"
+    ],
+    "title": "Urban Loft",
+    "description": [
+      "A trendy loft in a vibrant urban area.",
+      "Immerse yourself in the vibrant energy of city life with this trendy Urban Loft. Located in a bustling urban area, this two-bedroom loft offers a stylish and contemporary living space with an industrial-chic design. The open-plan layout features exposed brick walls, high ceilings, and large windows that let in plenty of natural light. The living area is the perfect place to relax and unwind, with comfortable seating and a modern entertainment system. The kitchen is sleek and modern, with stainless steel appliances and a breakfast bar that doubles as a dining area. The bedrooms are spacious and inviting, with minimalist decor that promotes relaxation. The building offers additional amenities, including a fully equipped gym and a rooftop terrace with stunning views of the city. High-speed Wi-Fi ensures you can stay connected, and the loft's central location provides easy access to the city's best restaurants, bars, and cultural attractions. Whether you're exploring the local nightlife or enjoying a quiet evening at home, this Urban Loft offers the perfect blend of style and convenience."
+    ],
+    "price": 300,
+    "location": "Urban",
+    "bedrooms": 2,
+    "amenities": ["gym", "wifi", "rooftop"]
+  },
+  {
+    "id": 8,
+    "image": [
+      "/houses/house 8.jpg",
+      "/houses/house 8.1.jpg",
+      "/houses/house 8.2.jpg"
+    ],
+    "title": "Mountain Chalet",
+    "description": [
+      "A cozy chalet with stunning mountain views.",
+      "This spacious Suburban Family Home offers the perfect blend of comfort and convenience for families looking for a peaceful retreat in the suburbs. Located in a quiet residential area, this three-bedroom home is designed with family living in mind. The open-plan living area is bright and airy, with plenty of space for the whole family to relax and unwind. The modern kitchen is fully equipped with everything you need to prepare family meals, and the adjacent dining area is perfect for gathering around the table. The bedrooms are generously sized, with comfortable beds and plenty of storage space. The master bedroom includes an en-suite bathroom, while the other bedrooms share a well-appointed family bathroom. The home also features a private garden, ideal for outdoor play, and a garage for secure parking. High-speed Wi-Fi ensures everyone can stay connected, and the home's location provides easy access to local schools, parks, and shopping centers. Whether you're enjoying a barbecue in the garden or a movie night in the living room, this Suburban Family Home offers a welcoming and comfortable space for families to create lasting memories."
+    ],
+    "price": 180,
+    "location": "Mountains",
+    "bedrooms": 2,
+    "amenities": ["fireplace", "ski-in/ski-out"]
+  },
+  {
+    "id": 9,
+    "image": [
+      "/houses/house 9.jpg",
+      "/houses/house 9.1.jpg",
+      "/houses/house 9.2.jpg"
+    ],
+    "title": "Lake House",
+    "description": "A serene lake house with a private dock.",
+    "price": 220,
+    "location": "Lakefront",
+    "bedrooms": 3,
+    "amenities": ["boat", "fishing", "wifi"]
+  },
+  {
+    "id": 10,
+    "image": [
+      "/houses/house 10.jpg",
+      "/houses/house 10.1.jpg",
+      "/houses/house 10.2.jpg"
+    ],
+    "title": "Desert Oasis",
+    "description": [
+      "A serene lake house with a private dock.",
+      "Immerse yourself in the vibrant energy of city life with this trendy Urban Loft. Located in a bustling urban area, this two-bedroom loft offers a stylish and contemporary living space with an industrial-chic design. The open-plan layout features exposed brick walls, high ceilings, and large windows that let in plenty of natural light. The living area is the perfect place to relax and unwind, with comfortable seating and a modern entertainment system. The kitchen is sleek and modern, with stainless steel appliances and a breakfast bar that doubles as a dining area. The bedrooms are spacious and inviting, with minimalist decor that promotes relaxation. The building offers additional amenities, including a fully equipped gym and a rooftop terrace with stunning views of the city. High-speed Wi-Fi ensures you can stay connected, and the loft's central location provides easy access to the city's best restaurants, bars, and cultural attractions. Whether you're exploring the local nightlife or enjoying a quiet evening at home, this Urban Loft offers the perfect blend of style and convenience."
+    ],
+    "price": 150,
+    "location": "Desert",
+    "bedrooms": 2,
+    "amenities": ["pool", "hiking trails"]
+  }
+]
