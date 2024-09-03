@@ -2,11 +2,15 @@
 
 A responsive Rental Housing Marketplace frontend with multiple cart systems, booking management, smooth transitions, and a clean UI. Built with Next.js, TypeScript, Tailwind CSS, and GSAP animations.
 
-![Next.js](https://img.shields.io/badge/Next.js-v13.4-blue.svg?style=for-the-badge&logo=next.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-v4.9-blue.svg?style=for-the-badge&logo=typescript)
+![Next.js](https://img.shields.io/badge/Next.js-v14.2.7-blue.svg?style=for-the-badge&logo=next.js)
+![React](https://img.shields.io/badge/React-v18-blue.svg?style=for-the-badge&logo=react)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-v3.3-blue.svg?style=for-the-badge&logo=tailwindcss)
-![GSAP](https://img.shields.io/badge/GSAP-v3.11-green.svg?style=for-the-badge&logo=greensock)
+![GSAP](https://img.shields.io/badge/GSAP-v3.12.5-green.svg?style=for-the-badge&logo=greensock)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
+
+## Live Demo
+
+Check out the live version of the website here: [Live Demo](https://totality-housing-market.netlify.app/)
 
 ## Table of Contents
 
@@ -32,7 +36,7 @@ To set up the project locally, follow these steps:
    ```
 3. Install the necessary dependencies:
    ```bash
-   npm install next gsap typescript tailwindcss @herotofu/react
+   npm install next react gsap tailwindcss @herotofu/react
    ```
 4. Run the development server:
    ```bash
