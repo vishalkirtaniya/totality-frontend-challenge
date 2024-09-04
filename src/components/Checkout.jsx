@@ -1,98 +1,136 @@
-"use client";
+import React, { useState } from "react";
 
-import React, { useState, useEffect, useRef } from "react";
-import propertiesData from "@/data/properties.json";
-import Navbar from "@/components/Navbar";
-import Listing from "@/app/listing/page";
-import { useBooking } from "@/context/BookingContext";
-import Footer from "@/components/Footer";
-import gsap from "gsap";
+const Checkout = ({ bookedProperties, totalCost, onCompleteCheckout }) => {
+  const [bookingDetails, setBookingDetails] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    cardNumber: "",
+    expiryDate: "",
+    cvv: "",
+  });
 
-const Home = () => {
-  const navbarRef = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      if (scrollPosition > 80) {
-        gsap.to(navbarRef.current, {
-          duration: 0.3,
-          height: 90, // Increase the width
-          backgroundColor: "#051922", // Change the color
-          ease: "power2.out",
-        });
-      } else {
-        gsap.to(navbarRef.current, {
-          duration: 0.3,
-          height: 80, // Reset the width
-          backgroundColor: "#f3f4f6",
-          ease: "power2.out",
-        });
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const { bookedProperties, setBookedProperties } = useBooking();
-  const [filteredProperties, setFilteredProperties] = useState(propertiesData);
-  const [showCheckout, setShowCheckout] = useState(false);
-
-  const totalCost = bookedProperties.reduce(
-    (acc, property) => acc + property.price * property.quantity,
-    0
-  );
-
-  const handleFilterChange = (filteredProperties) => {
-    setFilteredProperties(filteredProperties);
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setBookingDetails((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
 
-  const handleBookNow = (property) => {
-    setBookedProperties((prev) => {
-      const existingProperty = prev.find((p) => p.id === property.id);
-      if (existingProperty) {
-        return prev.map((p) =>
-          p.id === property.id ? { ...p, quantity: p.quantity + 1 } : p
-        );
-      }
-      return [
-        ...prev,
-        { ...property, quantity: 1, bookingDates: [new Date(), new Date()] },
-      ];
-    });
-  };
-
-  const handleCompleteCheckout = (details) => {
-    console.log("Booking Details:", details);
-    console.log("Booked Properties:", bookedProperties);
-    // You can integrate this with a backend or payment service
-    setBookedProperties([]); // Clear the cart after successful checkout
-    setShowCheckout(false); // Hide checkout after completion
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onCompleteCheckout(bookingDetails);
   };
 
   return (
-    <div className="">
-      <div
-        ref={navbarRef}
-        className="xxs:h-[50px] sm:h-[60px] md:h-20 w-full fixed z-50"
-      >
-        <div className="container mx-auto h-full w-[95%] ">
-          <Navbar />
+    <div className="checkout p-4 rounded">
+      <h2 className="text-2xl font-bold mb-4 xxs:text-xs sm:text-sm md:text-lg">
+        Checkout
+      </h2>
+      <div className="mb-4">
+        <h3 className="text-xl font-bold xxs:text-xs sm:text-sm md:text-lg">
+          Booked Properties
+        </h3>
+        {bookedProperties.map((property) => (
+          <div key={property.id} className="mb-2">
+            <p>
+              {property.title} - ${property.price} x {property.quantity}
+            </p>
+          </div>
+        ))}
+        <p className="xxs:text-xs sm:text-sm md:text-lg lg:text-xl font-bold mt-2">
+          Total Cost: ${totalCost}
+        </p>
+      </div>
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <div>
+          <label className="block xxs:text-xs sm:text-sm font-bold mb-1">
+            Name
+          </label>
+          <input
+            type="text"
+            name="name"
+            value={bookingDetails.name}
+            onChange={handleInputChange}
+            className="w-full p-2 border border-gray-300 focus:outline-customOrange focus:outline-none focus:outline-1 rounded xxs:text-xs sm:text-sm md:text-md"
+            required
+          />
         </div>
-      </div>
-      <div className="w-[95%] container mx-auto pt-20 mb-5">
-        <Listing
-          onBookNow={handleBookNow}
-          onFilterChange={handleFilterChange}
-        />
-      </div>
-      <Footer />
+        <div>
+          <label className="block xxs:text-xs sm:text-sm font-bold mb-1">
+            Email
+          </label>
+          <input
+            type="email"
+            name="email"
+            value={bookingDetails.email}
+            onChange={handleInputChange}
+            className="w-full p-2 border border-gray-300 focus:outline-customOrange focus:outline-none focus:outline-1 rounded xxs:text-xs sm:text-sm md:text-md"
+            required
+          />
+        </div>
+        <div>
+          <label className="block xxs:text-xs sm:text-sm font-bold mb-1">
+            Phone
+          </label>
+          <input
+            type="tel"
+            name="phone"
+            value={bookingDetails.phone}
+            onChange={handleInputChange}
+            className="w-full p-2 border border-gray-300 focus:outline-customOrange focus:outline-none focus:outline-1 rounded xxs:text-xs sm:text-sm md:text-md"
+            required
+          />
+        </div>
+        <div>
+          <label className="block xxs:text-xs sm:text-sm font-bold mb-1">
+            Card Number
+          </label>
+          <input
+            type="text"
+            name="cardNumber"
+            value={bookingDetails.cardNumber}
+            onChange={handleInputChange}
+            className="w-full p-2 border border-gray-300 focus:outline-customOrange focus:outline-none focus:outline-1 rounded xxs:text-xs sm:text-sm md:text-md"
+            required
+          />
+        </div>
+        <div>
+          <label className="block xxs:text-xs sm:text-sm font-bold mb-1">
+            Expiry Date
+          </label>
+          <input
+            type="text"
+            name="expiryDate"
+            value={bookingDetails.expiryDate}
+            onChange={handleInputChange}
+            className="w-full p-2 border border-gray-300 focus:outline-customOrange focus:outline-none focus:outline-1 rounded xxs:text-xs sm:text-sm md:text-md"
+            required
+          />
+        </div>
+        <div>
+          <label className="block xxs:text-xs sm:text-sm font-bold mb-1">
+            CVV
+          </label>
+          <input
+            type="text"
+            name="cvv"
+            value={bookingDetails.cvv}
+            onChange={handleInputChange}
+            className="w-full p-2 border border-gray-300 focus:outline-customOrange focus:outline-none focus:outline-1 rounded xxs:text-xs sm:text-sm md:text-md"
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          className="xxs:w-3/4 md:w-[300px] py-2 bg-orange-600 hover:bg-orange-500 text-white font-bold rounded xxs:text-xs sm:text-sm md:text-lg lg:text-xl"
+        >
+          Complete Booking
+        </button>
+      </form>
     </div>
   );
 };
 
-export default Home;
+export default Checkout;
