@@ -46,7 +46,7 @@ const PropertyCard = ({ id, image, title, description, price, onBookNow }) => {
       <h2 className="xxs:text-md sm:text-lg md:text-xl font-semibold mb-2 text-slate-800">
         {title}
       </h2>
-      <p className="text-slate-800 mb-4 xxs:text-xs sm:text-sm md:text-lg">
+      <p className="text-slate-800 mb-4 xxs:text-xs sm:text-sm md:text-lg line-clamp-1">
         {description}
       </p>
       <div className="xxs:text-xs sm:text-sm md:text-md lg:text-lg text-slate-900 font-semibold xxs:mb-1 sm:mb-2 md:mb-3 lg:mb-4">
